@@ -10,6 +10,7 @@ function S = cpower(U, I)
     phid = rad2deg(phi);
     cosphi = cos(phi);
     
+    %TODO: Detect if power is inductive or capacitive.    
     phi_type = 'Ind';
     fprintf('phi = %g%c, cos(phi) = %g (%s)\n', phid, char(0176), cosphi, phi_type);
  
